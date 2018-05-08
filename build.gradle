@@ -84,3 +84,8 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions.jvmTarget = java_version
 }
+
+// Add 'stage' task required by Heroku
+task stage(dependsOn: ['build', 'clean']) {
+    build.mustRunAfter clean
+}
