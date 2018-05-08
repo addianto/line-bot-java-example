@@ -18,7 +18,7 @@ public class EchoController {
     public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         LOGGER.fine(String.format("TextMessageContent(timestamp='%s',content='%s')",
                 event.getTimestamp(), event.getMessage()));
-        return new TextMessage(String.format("You sent: %s", event.getMessage()));
+        return new TextMessage(event.getMessage().getText());
     }
 
     @EventMapping
