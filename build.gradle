@@ -103,6 +103,6 @@ compileTestKotlin {
 }
 
 // Add 'stage' task required by Heroku
-task stage(dependsOn: ['build', 'clean']) {
-    build.mustRunAfter clean
+task stage(dependsOn: ['bootJar', 'clean']) {
+    bootJar.mustRunAfter clean
 }
