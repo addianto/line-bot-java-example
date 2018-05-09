@@ -1,4 +1,4 @@
-package to.adian.example.controller;
+package advprog.example.bot.controller;
 
 import com.linecorp.bot.model.event.Event;
 import com.linecorp.bot.model.event.MessageEvent;

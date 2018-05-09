@@ -1,4 +1,4 @@
-package to.adian.example;
+package advprog.example.bot;
 
 import java.util.logging.Logger;
 
